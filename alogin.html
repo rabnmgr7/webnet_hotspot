@@ -68,10 +68,14 @@
     </style>
     <script language="JavaScript">
         function startClock() {
-            $(if popup == 'true')
+            var popup = 'true'; // This should be set dynamically based on your logic
+            var linkStatus = 'https://webnet.com.np';
+            if (popup == 'true') {
                 open('$(link-status)', 'hotspot_status', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=290');
-            $(endif)
-            location.href = 'http://mikrohome.com', 500;
+            }
+            setTimeout(function() {
+                location.href = 'http://mikrohome.com';
+            }, 500);
         }
     </script>
 </head>
